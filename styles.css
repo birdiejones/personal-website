@@ -1,13 +1,14 @@
+/* global CSS */
 html {
-    background-color: #ebebf9;
+  background-color: #ebebf9;
 }
 
 body {
   max-width: 800px;
   margin: 0 auto;
   font-family: arial;
-   box-shadow: 0px 0px 15px #4a4a4a;
-   background-color: #f4f7ff;
+  box-shadow: 0px 0px 15px #4a4a4a;
+  background-color: #f4f7ff;
 }
 
 h1 {
@@ -44,6 +45,7 @@ nav {
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -66,11 +68,21 @@ footer {
   text-align: center;
   box-shadow: 0 0 12px #4a4a4a;
 }
+a:hover {
+  color: #5770c2;
+  text-decoration: underline;
+}
+.active {
+  text-decoration: underline;
+}
 
 .media-links {
   width: 45px;
   padding: 10px;
 }
+/* end global css */
+
+/* start home section */
 
 .self-portrait {
   display: inline-block;
@@ -83,19 +95,20 @@ footer {
   padding: 140px 24px 96px;
   color: #4a4a4a;
   font-size: 25px;
- 
 }
+
 .bottom-content {
   min-height: 40vh;
   padding: 50px 24px 96px;
   color: #4a4a4a;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
-  
 }
+/* end home section */
 
+/* start about me section */
 .about-me-section {
-  min-height:50vh;
+  min-height: 50vh;
   padding: 0px 0px 0px;
   color: #4a4a4a;
   font-family: "";
@@ -104,7 +117,7 @@ footer {
   border-top: #4a4a4a;
 }
 
- .about-me-section:nth-of-type(2n) > img {
+.about-me-section:nth-of-type(2n) > img {
   float: left;
   margin: 0 24px 24px 0;
 }
@@ -127,7 +140,30 @@ footer {
   border-radius: 100%;
   border: #bccaff;
 }
+/* end about me section */
 
-a:hover {
-    color:#5770c2;
+/* Begin portfolio section */
+ .project {
+  width: calc(100% - 6em);
+  background: #fafafa;
+  color: #222;
+  box-shadow: 0 3px 6px -2px #ccc;
+  margin: 110px auto;
+  padding: 1em;
+  border-radius: 10px;
 }
+
+
+.project h2 {
+  font-weight: 500;
+  font-size: 2em;
+  margin: 0 0 1em;
+  border-bottom: 2px solid #ccc;
+}
+
+.project img {
+    width: 100%!important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 10px;
+  }
